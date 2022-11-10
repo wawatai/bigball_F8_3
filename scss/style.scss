@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1;
+}
+main {
+    display: block;
+}
+ol,ul {
+    list-style: none;
+}
+blockquote,q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+button {
+    font-family: "微軟正黑體";
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+select,input {
+    font-family: "微軟正黑體";
+    outline: none;
+    appearance: none;
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+
+//內容
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #293239;
+
+    body{
+        width: 100%;
+        min-width: 1000px;
+        height: 100%;
+        overflow: hidden;
+
+        main {
+            width: 100%;
+            height: 100%;
+
+            article {
+                width: 100%;
+                min-width: 1000px;
+                height: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .right {
+                    width: 30.63%;
+                    height: auto;
+                    position: absolute;
+                    top: 6.5%;
+                    right: 22%;
+                    z-index: 10;
+
+                    .logo {
+                        width: 100%;
+                        height: 0;
+                        background: url('../images/logo.png') no-repeat;
+                        background-size: 100%;
+                        padding-top: 32.4%;
+                    }
+    
+                    label {
+                        display: block;
+                        width: 279px;
+                        height: 49px;
+                        margin: 6% 0 10px 9%;
+
+                        &:nth-of-type(2) {
+                            margin: 0 0 20px 9%;
+                        }
+    
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            background: #ffffffc9;
+                            border-radius: 5px;
+                            border: solid 2px #ffffff;
+                            color: #5d3807;
+                            font-size: 20px;
+                            text-align: center;
+    
+                            &::placeholder {
+                                color: #5d3807;
+                            }
+                        }
+                    }
+    
+                    button {
+                        width: 238px;
+                        height: 57px;
+                        background: linear-gradient(to top,#652539 0%,#c05476 100%);
+                        border-radius: 10px;
+                        border: solid 2px #ffe762;
+                        box-shadow: 0 5px 10px 2px #00000080;
+                        color: #ffffff;
+                        font-size: 25px;
+                        font-weight: bold;
+                        letter-spacing: 3px;
+                        margin-left: 12.5%;
+    
+                        &:hover,&:active,&.active {
+                            background: linear-gradient(to top,#962649 0%,#771c38 100%);
+                        }
+                    }
+
+                    @media screen and (max-width: 1700px) {
+                        label {
+                            width: 250px;
+                            height: 42px;
+
+                            input {
+                                font-size: 18px;
+                            }
+                        }
+
+                        button {
+                            width: 212px;
+                            height: 48px;
+                            font-size: 21px;
+                        }
+                    }
+
+                    @media screen and (max-width: 1400px) {
+                        label {
+                            width: 220px;
+                            height: 36px;
+                            margin: 1% 0 10px 3%;
+
+                            &:nth-of-type(2) {
+                                margin: 0 0 20px 3%;
+                            }
+
+                            input {
+                                font-size: 16px;
+                            }
+                        }
+
+                        button {
+                            width: 192px;
+                            height: 42px;
+                            font-size: 18px;
+                            margin-left: 6.5%;
+                        }
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        label {
+                            width: 180px;
+                            margin: 0 0 10px 0;
+
+                            &:nth-of-type(2) {
+                                margin: 0 0 20px 0;
+                            }
+
+                            input {
+                                font-size: 16px;
+                            }
+                        }
+
+                        button {
+                            width: 160px;
+                            margin-left: 3.5%;
+                        }
+                    }
+                }
+
+                .img1 {
+                    width: 50%;
+                    height: 0;
+                    background: url('../images/img1.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    left: 7.5%;
+                    top: 0;
+                    animation: img1 0.6s linear 0s;
+                    z-index: 1;
+                    padding-top: 52%;
+
+                    // &::before {
+                    //     content: "";
+                    //     position: absolute;
+                    //     left: 0;
+                    //     top: 0;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     background: url('../images/img1.png') no-repeat;
+                    //     animation: lag 0.4s linear 0s,img2 0.6s linear 0.4s;
+                    //     opacity: 0;
+                    // }
+                }
+            }
+        }
+        //背景
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-width: 1000px;
+            height: 100%;
+            background: url('../images/bg.jpg') no-repeat top center;
+            background-size: 100%;
+            z-index: -999;
+        }
+    }
+}
+@keyframes img1 {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(-720deg);
+    }
+
+    80% {
+        transform: scale(1.2) rotate(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes img2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(1.2);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+@keyframes lag {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

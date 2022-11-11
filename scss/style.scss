@@ -79,154 +79,64 @@ html {
                 min-width: 1000px;
                 height: 100%;
                 position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
 
-                .right {
-                    width: 30.63%;
-                    height: auto;
-                    position: absolute;
-                    top: 6.5%;
-                    right: 22%;
-                    z-index: 10;
+                .logo {
+                    width: 100%;
+                    height: 0;
+                    background: url('../images/logo.png') no-repeat;
+                    background-size: contain;
+                    padding-top: 14.95%;
+                    margin: 4.8% 0 0 9.15%;
+                }
 
-                    .logo {
-                        width: 100%;
-                        height: 0;
-                        background: url('../images/logo.png') no-repeat;
-                        background-size: 100%;
-                        padding-top: 32.4%;
-                    }
-    
-                    label {
-                        display: block;
-                        width: 279px;
-                        height: 49px;
-                        margin: 6% 0 10px 9%;
+                .inputBox {
+                    width: 100%;
+                    height: 0;
+                    background: url('../images/inputBG.png') no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    padding-top: 9.64%;
+                    margin: 0.1% 0 0 12.45%;
+
+                    input {
+                        width: 13%;
+                        height: 28%;
+                        background: none;
+                        border: none;
+                        color: #121212;
+                        font-size: 1.5vw;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 8.5%;
+                        left: 3.5%;
 
                         &:nth-of-type(2) {
-                            margin: 0 0 20px 9%;
-                        }
-    
-                        input {
-                            width: 100%;
-                            height: 100%;
-                            background: #ffffffc9;
-                            border-radius: 5px;
-                            border: solid 2px #ffffff;
-                            color: #5d3807;
-                            font-size: 20px;
-                            text-align: center;
-    
-                            &::placeholder {
-                                color: #5d3807;
-                            }
+                            top: 62.5%;
                         }
                     }
-    
+
                     button {
-                        width: 238px;
-                        height: 57px;
-                        background: linear-gradient(to top,#652539 0%,#c05476 100%);
-                        border-radius: 10px;
-                        border: solid 2px #ffe762;
-                        box-shadow: 0 5px 10px 2px #00000080;
-                        color: #ffffff;
-                        font-size: 25px;
-                        font-weight: bold;
-                        letter-spacing: 3px;
-                        margin-left: 12.5%;
-    
+                        width: 12%;
+                        height: 106%;
+                        background: url('../images/loginBtn.png') no-repeat;
+                        background-size: contain;
+                        position: absolute;
+                        top: -3%;
+                        left: 17.6%;
+
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to top,#962649 0%,#771c38 100%);
-                        }
-                    }
-
-                    @media screen and (max-width: 1700px) {
-                        label {
-                            width: 250px;
-                            height: 42px;
-
-                            input {
-                                font-size: 18px;
-                            }
-                        }
-
-                        button {
-                            width: 212px;
-                            height: 48px;
-                            font-size: 21px;
-                        }
-                    }
-
-                    @media screen and (max-width: 1400px) {
-                        label {
-                            width: 220px;
-                            height: 36px;
-                            margin: 1% 0 10px 3%;
-
-                            &:nth-of-type(2) {
-                                margin: 0 0 20px 3%;
-                            }
-
-                            input {
-                                font-size: 16px;
-                            }
-                        }
-
-                        button {
-                            width: 192px;
-                            height: 42px;
-                            font-size: 18px;
-                            margin-left: 6.5%;
-                        }
-                    }
-
-                    @media screen and (max-width: 1200px) {
-                        label {
-                            width: 180px;
-                            margin: 0 0 10px 0;
-
-                            &:nth-of-type(2) {
-                                margin: 0 0 20px 0;
-                            }
-
-                            input {
-                                font-size: 16px;
-                            }
-                        }
-
-                        button {
-                            width: 160px;
-                            margin-left: 3.5%;
+                            filter: brightness(1.2);
                         }
                     }
                 }
 
-                .img1 {
-                    width: 50%;
+                .downBtn {
+                    width: 100%;
                     height: 0;
-                    background: url('../images/img1.png') no-repeat;
-                    background-size: 100%;
-                    position: absolute;
-                    left: 7.5%;
-                    top: 0;
-                    animation: img1 0.6s linear 0s;
-                    z-index: 1;
-                    padding-top: 52%;
-
-                    // &::before {
-                    //     content: "";
-                    //     position: absolute;
-                    //     left: 0;
-                    //     top: 0;
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     background: url('../images/img1.png') no-repeat;
-                    //     animation: lag 0.4s linear 0s,img2 0.6s linear 0.4s;
-                    //     opacity: 0;
-                    // }
+                    background: url('../images/downBtn.png') no-repeat;
+                    background-size: contain;
+                    padding-top: 3.13%;
+                    margin: 0.7% 0 0 13.35%;
                 }
             }
         }
@@ -242,44 +152,5 @@ html {
             background-size: 100%;
             z-index: -999;
         }
-    }
-}
-@keyframes img1 {
-    0% {
-        opacity: 0;
-        transform: scale(0) rotate(-720deg);
-    }
-
-    80% {
-        transform: scale(1.2) rotate(0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes img2 {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.2;
-        transform: scale(1.2);
-    }
-    
-    100% {
-        opacity: 0;
-        transform: scale(1.4);
-    }
-}
-@keyframes lag {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
     }
 }

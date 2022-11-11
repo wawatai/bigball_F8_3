@@ -125,7 +125,7 @@ html {
                         left: 17.6%;
 
                         &:hover,&:active,&.active {
-                            filter: brightness(1.2);
+                            filter: brightness(0.7);
                         }
                     }
                 }
@@ -137,6 +137,10 @@ html {
                     background-size: contain;
                     padding-top: 3.13%;
                     margin: 0.7% 0 0 13.35%;
+
+                    &:hover,&:active,&.active {
+                        background: url('../images/downBtn_2.png') no-repeat;
+                    }
                 }
             }
         }

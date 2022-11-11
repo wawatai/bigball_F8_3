@@ -139,7 +139,7 @@ html body main article .inputBox button:hover, html body main article .inputBox 
   background-size: contain;
 }
 html body main article .downBtn {
-  width: 100%;
+  width: 21%;
   height: 0;
   background: url("../images/downBtn.png") no-repeat;
   background-size: contain;

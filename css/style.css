@@ -135,8 +135,8 @@ html body main article .inputBox button {
   left: 17.6%;
 }
 html body main article .inputBox button:hover, html body main article .inputBox button:active, html body main article .inputBox button.active {
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
+  background: url("../images/loginBtn_2.png") no-repeat;
+  background-size: contain;
 }
 html body main article .downBtn {
   width: 100%;
@@ -148,6 +148,7 @@ html body main article .downBtn {
 }
 html body main article .downBtn:hover, html body main article .downBtn:active, html body main article .downBtn.active {
   background: url("../images/downBtn_2.png") no-repeat;
+  background-size: contain;
 }
 html body .bg {
   position: absolute;

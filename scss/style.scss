@@ -125,7 +125,8 @@ html {
                         left: 17.6%;
 
                         &:hover,&:active,&.active {
-                            filter: brightness(0.7);
+                            background: url('../images/loginBtn_2.png') no-repeat;
+                            background-size: contain;
                         }
                     }
                 }
@@ -140,6 +141,7 @@ html {
 
                     &:hover,&:active,&.active {
                         background: url('../images/downBtn_2.png') no-repeat;
+                        background-size: contain;
                     }
                 }
             }
